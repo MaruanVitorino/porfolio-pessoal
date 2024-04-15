@@ -1,0 +1,442 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo-primaria: #F5F5F5;   
+   --cor-de-fundo-secundaria: #EAF2FD;
+   --cor-de-fundo-tercearia: #FFFFFF;
+   --cor-de-link: #000;
+   --cor-de-fonte-primaria: #464646;
+   --cor-de--botao--repo: #2A7AE4;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo-primaria) ;
+    font-family: 'Raleway';
+    margin: 0;
+    line-height: 1;
+}
+ol, ul,li,p, h1,h2,h3,h4,form, input{
+    list-style: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 152px;
+    color: var(--cor-de-fonte-primaria);
+}
+
+.menu__header {
+    display: flex;
+    gap: 6px;
+}
+
+.menu__title {
+    margin: 0;    
+}
+
+.menu__list__item__contato {
+    display: none;
+}
+
+.menu__list {
+    display: flex;
+    gap: 32px;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 17px;
+}
+
+.title__bio {
+    color: var(--cor-de-fonte-primaria);
+    font-size: 3.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.title__subsection {
+    padding: 1.5rem 0rem;
+    margin: 0;
+    font-size: 1.375rem;
+    font-weight: 200;
+    color: var(--cor-de-fonte-primaria);
+}
+
+.title__network {
+    display: flex;
+    margin:0;
+    padding: 0;
+    font-size: 1rem;
+    gap: 2rem;
+}
+
+/* MÉTODO BEM*/
+
+/*Sessão Menu*/
+
+section.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 152px; 
+}
+
+/*Sessão Title*/
+
+section.title{
+    padding-bottom: 32px; 
+}
+
+/*Sessão About*/
+
+section.about{
+    font-size: 1rem;    
+    background-color: var(--cor-de-fundo-secundaria);
+  
+}
+
+.about__title {
+    margin:0; 
+    font-size: 2rem;
+}
+
+.about__paragraph {
+    width: 731px;
+    margin: 16px 0px;
+}
+
+/*Sessão Skills*/
+section.skills {
+    padding-bottom: 88px;
+}
+
+ .skills__title {
+    padding-bottom: 32px; 
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+} 
+
+.skills__line {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.skills__box {
+    align-content: end;
+    margin: 0;
+    padding: 0px;
+    border: 0;
+    background-color: var(--cor-de-fundo-tercearia);
+    width: 156px;
+    height: 154px;
+}
+
+.skills__img {
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+
+.skills__name{
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    
+}
+
+.hobbies__title {
+    padding-bottom: 32px; 
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.hobbies__line {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.hobbies__box {
+    align-content: end;
+    margin: 0;
+    padding: 0px;
+    border: 0;
+    background-color: var(--cor-de-fundo-tercearia);
+    width: 156px;
+    height: 154px;
+}
+
+.hobbies__line {
+    padding-bottom: 8px;
+}
+
+.hobbies__img {
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+
+.hobbies__name {
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+
+/* Experiência Acadêmica*/
+
+section.academic{
+    font-size: 1rem;    
+    background-color: var(--cor-de-fundo-secundaria);
+    margin: 0;
+    padding-bottom: 82px;
+}
+
+.academic__title{
+    padding-bottom: 32px; 
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.academic__courses {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.academic__courses__box{
+
+}
+
+.academic__courses__list {
+
+}
+
+.academic__courses__item__img{
+
+}
+
+.academic__courses__item__title{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 8px 0px;
+}
+
+.academic__courses__item__subtitle{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*  EXPERIÊNCIA*/
+
+section.experience{
+    font-size: 1rem;    
+    background-color: var(--cor-de-fundo-primaria);
+    margin: 0;
+    padding-bottom: 82px;
+}
+
+.experience__section__title {
+    padding-bottom: 32px; 
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.experiencie__box {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+.experience__img{
+
+}
+
+.experience__info{
+}
+
+.experience__title{        
+    font-size: 22px;
+    font-weight: 600;
+}
+.experience__text{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 0px;
+}
+
+.experience__description{
+    justify-content: space-between;
+}
+
+.experiencia__botao--repo{
+    width: 116px;
+    height: 51px;
+    padding: 16px;
+    border: 1px;
+    border-color: var(--cor-de--botao--repo);
+    border-style: solid;
+    color: var(--cor-de--botao--repo);
+    font-size: 16px;
+
+}
+
+.experiencia__botao--demo{
+    width: 116px;
+    height: 51px;
+    padding: 16px;
+    border: 1px;
+    border-color: var(--cor-de--botao--repo);
+    background-color: var(--cor-de--botao--repo);
+    border-style: solid;
+    color: var(--cor-de-fundo-tercearia);
+    font-size: 16px;
+}
+
+/*Contato*/
+
+section.formcontato{
+    background-color: var(--cor-de-fundo-secundaria);
+    padding-bottom: 82px;
+    justify-content: space-around;
+}
+
+.formcontato__contacto {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.formcontato__text{
+    flex-wrap: wrap;
+}
+.formcontato__subtext{
+    margin: 6px;
+}
+
+.formcontato__form {
+    gap:32px;
+}
+
+.formcontato__input{
+    gap: 32px;
+    color: #A2A2A2;
+    font-size: 12px;
+}
+
+.formcontato__input {
+    width: 640px;
+    height: 56px;
+}
+
+.formcontato__title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: start;
+    padding-bottom: 8px;
+}
+
+.formcontato__subtext {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.formcontato__form{
+    padding-top: 32px;
+}
+.formcontato__input {
+    border-radius: 4px;
+    padding-top: 8px;
+}
+
+.formcontato__textarea {
+    height: 133px;
+    width: 640px;
+}
+.formcontato__botao{
+    width: 116px;
+    height: 51px;
+    padding: 16px;
+    border: 1px;
+    border-color: var(--cor-de--botao--repo);
+    background-color: var(--cor-de--botao--repo);
+    border-style: solid;
+    color: var(--cor-de-fundo-tercearia);
+    font-size: 16px;
+}
+/*footeer*/
+
+section.footer{
+   background-color: var(--cor-de-fundo-tercearia);
+   justify-content: center;
+   text-align: center;
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
